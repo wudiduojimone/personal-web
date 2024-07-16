@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #a9a9a9;
+  background-color: #fdf8f8;
 }
 
 body {
@@ -20,12 +20,12 @@ body {
 
 h1, h2, h3 {
   font-family: 'Long Cang', cursive;
-  color: #2a2a2a;
+  color: #ea1969;
 }
 
 p, input, li {
   font-family: 'Noto Sans SC', sans-serif;
-  color: #2a2a2a;
+  color: #121111;
 }
 
 h1 {
@@ -57,7 +57,7 @@ header {
 }
 
 main, header, nav, article, aside, footer, section {
-  background-color: rgba(29, 149, 63, 0.5);
+  background-color: rgba(13, 234, 76, 0.5);
   padding: 1%;
 }
 
@@ -129,4 +129,13 @@ aside img {
 
 footer {
   margin-top: 10px;
+}
+
+
+a:link{
+  color:pink
+}
+
+a:visited{
+  color: green;
 }
