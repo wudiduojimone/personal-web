@@ -2,11 +2,11 @@ a:link {
     color: blue;
   }
   
-  a:visited {
+a:visited {
     color: red;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: none;
-  }
+}
   
