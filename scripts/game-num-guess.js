@@ -9,6 +9,8 @@ const guessResult = document.querySelector(".guessResult");
 
 guessSubmit.addEventListener("click", checkGuess);
 
+guessField.focus();
+
 function checkGuess() {
   userValue = Number(guessField.value);
   if (userValue > 100 || userValue <= 0) {
@@ -59,6 +61,7 @@ function resetGame() {
   guessResult.textContent = "";
   guessField.value = "";
   guessResult.style.backgroundColor = "white";
+  guessField.focus();
 
   let randomNumber = Math.floor(Math.random() * 100) + 1;
   resetButton.parentNode.removeChild(resetButton);
