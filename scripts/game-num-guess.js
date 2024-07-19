@@ -63,6 +63,6 @@ function resetGame() {
   guessResult.style.backgroundColor = "white";
   guessField.focus();
 
-  let randomNumber = Math.floor(Math.random() * 100) + 1;
+  randomNumber = Math.floor(Math.random() * 100) + 1;
   resetButton.parentNode.removeChild(resetButton);
 }
