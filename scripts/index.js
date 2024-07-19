@@ -39,3 +39,14 @@ myButton.onclick = function () {
 };
   
 
+document.addEventListener("DOMContentLoaded", () => {
+    function createParagraph() {
+      const para = document.createElement("p");
+      para.textContent = "不要点我了!";
+      document.body.appendChild(para);
+    }
+  
+    button = document.getElementById("button_clickme");
+    button.addEventListener("click", createParagraph);
+  });
+  

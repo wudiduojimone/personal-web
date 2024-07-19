@@ -1,22 +1,20 @@
 @import url(style.css);
 
 html {
-    font-size: 10px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
-    font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 */
-    background-color:#00539f;
-  }
+  font-size: 10px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
+  font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 */
+  background-color: #00539f;
+}
 
 /*  */
 h1 {
-    font-size: 60px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-    color: #00539f;
-    text-shadow: 3px 3px 1px black;
-  }
-  
-  
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
+}
 
 p,
 li,
@@ -27,28 +25,54 @@ ol {
 }
 
 title {
-    text-align: center;
-    display: none;
+  text-align: center;
+  display: none;
 }
 
-
 body {
-    width: 600px;
-    margin: 0 auto;
-    background-color: #ff9500;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
-  }
-  
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
 
-  img {
-    max-width: 30;
-    max-height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+img {
+  max-width: 30;
+  max-height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-  a[href="personal-info-page.html"]{
-    font-size: 20px;
-  }
-  
+a[href="personal-info-page.html"],
+a[href="game-num-guess.html"] {
+  font-size: 20px;
+  display: flex;
+  padding: 5px;
+}
+
+/* 按钮基础样式 */
+button {
+  display: inline-block; /* 使按钮可以在行内显示，同时可以设置宽高 */
+  padding: 10px 20px; /* 内边距，影响按钮的大小和点击区域 */
+  font-size: 16px; /* 字体大小 */
+  color: hsl(0, 14%, 97%); /* 字体颜色 */
+  background-color: #b95fb0; /* 背景颜色 */
+  border: none; /* 移除边框 */
+  border-radius: 5px; /* 边框圆角 */
+  cursor: pointer; /* 鼠标悬停时显示指针形状 */
+  text-align: center; /* 文字居中 */
+  text-decoration: none; /* 移除下划线（如果按钮是链接） */
+  transition: background-color 0.3s ease; /* 过渡效果，使颜色变化更平滑 */
+}
+
+/* 鼠标悬停时的样式 */
+button:hover {
+  background-color: #0056b3; /* 悬停时的背景颜色 */
+}
+
+/* 点击时的样式（可选） */
+button:active {
+  transform: translateY(2px); /* 点击时稍微下移，增加反馈 */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* 添加阴影效果，增强立体感 */
+}
